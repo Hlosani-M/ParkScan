@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Rewards"
+             x:Class="ParkScan.Views.RewardsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="0,150,0,0">
+            <Label Text="Reach your first milestone of 10 parkings and earn 10 parkscan points!!!"
+                   Margin="10,0,10,0"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+            <Label Text="Happy Parking :)" Margin="10,0,10,0" TextColor="#C2185B"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

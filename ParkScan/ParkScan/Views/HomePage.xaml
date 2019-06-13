@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="ParkScan"
+             BackgroundColor="#eeeeee"
+             x:Class="ParkScan.Views.HomePage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="scanHomeIcon" Icon="qrCodeScanWhite" Clicked="ScanHomeIcon_Clicked" Priority="0"/>
+        <ToolbarItem x:Name="notificationsIcon" Icon="bellOutline" Clicked="NotificationsIcon_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout>
+            <Frame CornerRadius="4" HorizontalOptions="FillAndExpand" BackgroundColor="White" Margin="10,5,10,10" HasShadow="True">
+                <StackLayout>
+                    <Label 
+                     Text="Setup Payment Cards" 
+                     FontSize="Large" TextColor="#C2185B" 
+                     FontAttributes="Bold" />
+                    <Label 
+                     Text="You currently do not have any payment methods linked to your account. Click below to see your options."
+                     TextColor="#F06292"
+                     FontSize="Small"                   
+                     FontFamily="Arial"/>
+                    <Button 
+                    CornerRadius="4"
+                    HorizontalOptions="End"
+                     x:Name="btn_AddCard"
+                     BorderColor="#C2185B"
+                     BorderWidth="1"
+                     Clicked="Btn_AddCard_Clicked"
+                     Text="ADD CARD" 
+                     TextColor="#C2185B"
+                     FontFamily="Roboto" 
+                     BackgroundColor="Transparent"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="4" BackgroundColor="White" Margin="15,0,15,10" HasShadow="True" >
+                <StackLayout>
+                    <Label Text="Prepaid Balance" 
+                            FontSize="Large" TextColor="#C2185B" 
+                            FontAttributes="Bold"/>
+                    <Label Text="R 0.00"
+                            TextColor="#E91E63"
+                            FontSize="30"
+                            FontFamily="Arial"/>
+                    <Button x:Name="btn_TopUp"
+                            Clicked="Btn_TopUp_Clicked"
+                            Text="TOP UP" 
+                            CornerRadius="4"
+                            HorizontalOptions="End"
+                            BorderColor="#C2185B"
+                            BorderWidth="1"
+                            TextColor="#C2185B" 
+                            FontFamily="Roboto"  
+                            BackgroundColor="White"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame CornerRadius="4" BackgroundColor="White" Margin="15,0,15,0" HeightRequest="135">
+                <StackLayout>
+                   <Label Text="Free Parking Points" 
+                          FontSize="Large" TextColor="#C2185B" 
+                          FontAttributes="Bold"/>
+                   <Label Text="Earn points everytime you park. NB: Parking Points are parking space specific."
+                          VerticalOptions="CenterAndExpand"
+                          TextColor="#F06292"
+                          FontSize="Small"
+                          FontFamily="Arial"/>
+                    <Button Text="VIEW POINTS" 
+                            TextColor="#C2185B" 
+                            FontFamily="Roboto" 
+                            CornerRadius="4"
+                            BorderColor="#C2185B"
+                            HorizontalOptions="End"
+                            BorderWidth="1" 
+                            BackgroundColor="White"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

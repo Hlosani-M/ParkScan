@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="#eeeeee"
+             Title="About ParkScan"
+             x:Class="ParkScan.Views.AboutPage">
+    <ContentPage.Content>
+        <StackLayout Margin="10,150,10,10">
+            <Label Text="ParkScan"
+                   Margin="0,0,0,10"
+                   FontAttributes="Bold"
+                   TextColor="#C2185B"
+                   FontSize="Large"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Start" />
+            <Label Text="ParkScan is the best way to park! No cash, no queues, no frustrating trips to the ATM, simply drive in and out of your favourite parking areas while your parking is paid through your phone!"
+                   Margin="10,0,0,0"
+                   VerticalOptions="Center"/>
+            <Label  Text="Enjoy!" 
+                    FontSize="Medium"
+                    TextColor="#C2185B"
+                    Margin="10,0,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

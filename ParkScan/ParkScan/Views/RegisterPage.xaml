@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             Title="Register"
+             BackgroundColor="White"
+             x:Class="ParkScan.Views.RegisterPage">
+    <ContentPage.Content>
+     
+            <Grid RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="1.5*"/>
+                </Grid.RowDefinitions>
+
+                <BoxView BackgroundColor="#E91E63" Grid.Row="0"/>
+                <Label x:Name="appName" 
+                       Grid.Row="0"
+                       Text="ParkScan" 
+                       TextColor="White"
+                       FontFamily="times"
+                       FontAttributes="Bold"
+                       FontSize="50"
+                       HorizontalOptions="CenterAndExpand" 
+                       VerticalOptions="CenterAndExpand">
+                
+                </Label>
+                <StackLayout Grid.Row="1" BackgroundColor="White" Margin="10">
+                <Entry x:Name="entryUsernameReg" Placeholder="Username"/>
+                <Entry x:Name="entryPasswordReg" Placeholder="Password" IsPassword="True"/>
+                <Entry x:Name="entryConfirmPasswordReg" Placeholder="Re-Type Password" IsPassword="True"/>
+                <Entry x:Name="entryEmail" Placeholder="email-address"/>
+                <Button x:Name="btnRegisterReg" 
+                        Margin="0,20,0,0"
+                        Text="REGISTER"
+                        TextColor="White"
+                        HorizontalOptions="CenterAndExpand" 
+                        BackgroundColor="#C2185B"
+                        WidthRequest="150"
+                        Clicked="BtnRegisterReg_Clicked"/>
+            </StackLayout>
+            </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>
